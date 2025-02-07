@@ -7,6 +7,24 @@ public class ComputeFare {
         int response = 0;
         /* Put your code in between these comments : Top */
 
+        Scanner in = new Scanner(System.in);
+        int myAge = 0;
+        System.out.println("Enter your age:");
+        myAge = in.nextInt();
+        in.close();
+
+
+        if (myAge < 11){
+            response += 3;
+        }
+
+        if (myAge < 65 && myAge > 11){
+            response += 5;
+        }
+
+        else {
+            response += 3;
+        }
 
         /* Put your code in between these comments : Bottom */
 
